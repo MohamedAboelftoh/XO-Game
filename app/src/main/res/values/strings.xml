@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Xo Game</string>
+    <string name="player_o_name">Enter Player (O) name</string>
+    <string name="player_x_name">Enter Player (X) name</string>
+    <string name="go_to_game">Go To Game</string>
+</resources>

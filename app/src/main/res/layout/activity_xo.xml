@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topconstrain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="13dp"
+
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constrain2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Textplayr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="player1(X)"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/constrain2"
+            app:layout_constraintEnd_toStartOf="@id/Textplayr2"
+            app:layout_constraintStart_toStartOf="@id/constrain2"
+            app:layout_constraintTop_toTopOf="@id/constrain2" />
+
+        <TextView
+            android:id="@+id/scorePlayeer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score 0"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/Textplayr1"
+            app:layout_constraintEnd_toEndOf="@id/Textplayr1"
+            app:layout_constraintStart_toStartOf="@id/Textplayr1"/>
+
+        <TextView
+            android:id="@+id/Textplayr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="player2(O)"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/constrain2"
+            app:layout_constraintEnd_toEndOf="@id/constrain2"
+            app:layout_constraintStart_toEndOf="@id/Textplayr1"
+            app:layout_constraintTop_toTopOf="@id/constrain2" />
+
+        <TextView
+            android:id="@+id/ScorePlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score 0"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/Textplayr2"
+            app:layout_constraintStart_toStartOf="@id/Textplayr2"
+            app:layout_constraintTop_toBottomOf="@id/Textplayr2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintTop_toBottomOf="@id/constrain2">
+
+        <Button
+            android:tag="0"
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:onClick="onPlayerClick" />
+
+        <Button
+            android:tag="1"
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:onClick="onPlayerClick" />
+
+        <Button
+            android:tag="2"
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:onClick="onPlayerClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintTop_toBottomOf="@id/row1">
+
+        <Button
+            android:tag="3"
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:onClick="onPlayerClick" />
+
+        <Button
+            android:tag="4"
+            android:id="@+id/btn_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:background="@drawable/shape_button"
+            android:onClick="onPlayerClick" />
+
+        <Button
+            android:tag="5"
+            android:id="@+id/btn_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:background="@drawable/shape_button"
+            android:onClick="onPlayerClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintTop_toBottomOf="@id/row2">
+
+        <Button
+            android:tag="6"
+            android:id="@+id/btn_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:onClick="onPlayerClick" />
+
+        <Button
+            android:tag="7"
+            android:id="@+id/btn_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:onClick="onPlayerClick" />
+
+        <Button
+            android:tag="8"
+            android:id="@+id/btn_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:onClick="onPlayerClick" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
